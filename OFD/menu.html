@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 5px 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .payment-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .payment-form label {
+            font-weight: bold;
+        }
+        .payment-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu</h1>
+        <form class="payment-form" action="bill.html" method="post">
+            <div class="menu-item">
+                <img src="pasta.jpg" alt="Spaghetti Carbonara" class="img-fluid rounded">
+                <div>
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian pasta dish with bacon, eggs, and Parmesan cheese.</p>
+                    <p>Price: Rs.200</p>
+                    <input type="checkbox" id="pasta" name="food" value="Spaghetti Carbonara" class="mr-2">
+                    <label for="pasta">Select</label>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="salad.jpg" alt="Grilled Chicken Salad" class="img-fluid rounded">
+                <div>
+                    <h3>Grilled Chicken Salad</h3>
+                    <p>Fresh salad with grilled chicken breast, mixed greens, tomatoes, and balsamic dressing.</p>
+                    <p>Price: Rs.500</p>
+                    <input type="checkbox" id="salad" name="food" value="Grilled Chicken Salad" class="mr-2">
+                    <label for="salad">Select</label>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="pizaa.jpg" alt="Margherita Pizza" class="img-fluid rounded">
+                <div>
+                    <h3>Margherita Pizza</h3>
+                    <p>Traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.</p>
+                    <p>Price: Rs.700</p>
+                    <input type="checkbox" id="pizza" name="food" value="Margherita Pizza" class="mr-2">
+                    <label for="pizza">Select</label>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="noodles.jpg" alt="Chicken Noodles" class="img-fluid rounded">
+                <div>
+                    <h3>Chicken Noodles</h3>
+                    <p>Classic Italian Noodles with bacon, eggs, and Parmesan cheese.</p>
+                    <p>Price: Rs.200</p>
+                    <input type="checkbox" id="noodles" name="food" value="Chicken Noodles" class="mr-2">
+                    <label for="noodles">Select</label>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="meals.jpg" alt="Veg Meals" class="img-fluid rounded">
+                <div>
+                    <h3>Veg Meals</h3>
+                    <p>Classic Traditional meals with rice, sambar, and poriyal.</p>
+                    <p>Price: Rs.180</p>
+                    <input type="checkbox" id="meals" name="food" value="Veg Meals" class="mr-2">
+                    <label for="meals">Select</label>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="bbq.jpg" alt="BBQ Chicken" class="img-fluid rounded">
+                <div>
+                    <h3>BBQ Chicken</h3>
+                    <p>BBQ chicken with mainou.</p>
+                    <p>Price: Rs.500</p>
+                    <input type="checkbox" id="bbq" name="food" value="BBQ Chicken" class="mr-2">
+                    <label for="bbq">Select</label>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-success mt-3" value="Pay Now">
+        </form>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .payment-method {
+            text-align: center;
+        }
+        .payment-method img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .payment-method h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+        .payment-method p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .payment-method button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .payment-method button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Payment Method</h1>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="cash.jpg" alt="Cash">
+                <h3>Cash On Delivery</h3>
+                <p>Pay with cash upon delivery</p>
+                <button onclick="alert('Your order will be delivered shortly')">Pay Now</button>
+            </div>
+            <div class="payment-method">
+                <img src="card.jpg" alt="Card">
+                <h3>Credit/Debit Card</h3>
+                <p>Securely pay with your card</p>
+                <button onclick="alert('Redirecting to card payment gateway')">Pay Now</button>
+            </div>
+            <div class="payment-method">
+                <img src="paypal.jpg" alt="PayPal">
+                <h3>PayPal</h3>
+                <p>Pay with PayPal account</p>
+                <button onclick="alert('Redirecting to PayPal')">Pay Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
